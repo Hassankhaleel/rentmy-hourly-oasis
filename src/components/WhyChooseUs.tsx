@@ -5,37 +5,37 @@ const WhyChooseUs = () => {
     {
       icon: <Zap className="w-12 h-12" />,
       title: "Lightning Fast",
-      description: "Book your ideal workspace in under 60 seconds. Our streamlined process gets you working immediately.",
+      description: "Book your ideal space in under 60 seconds. Our streamlined process gets you celebrating or working immediately.",
       highlight: "60 second booking"
     },
     {
       icon: <Target className="w-12 h-12" />,
       title: "Pakistan-Focused",
-      description: "Built specifically for Pakistani professionals. We understand local business culture and workspace needs.",
+      description: "Built specifically for Pakistani culture. We understand local celebrations, business needs, and space preferences.",
       highlight: "Local expertise"
     },
     {
       icon: <Heart className="w-12 h-12" />,
       title: "Community Driven",
-      description: "Join a thriving community of entrepreneurs, freelancers, and businesses. Network while you work.",
+      description: "Join a thriving community of event planners, entrepreneurs, and businesses. Network while you celebrate.",
       highlight: "Growing community"
     },
     {
       icon: <Trophy className="w-12 h-12" />,
       title: "Premium Quality",
-      description: "Hand-picked locations with high-speed internet, ergonomic furniture, and professional environments.",
+      description: "Hand-picked locations with great ambiance, modern facilities, and perfect environments for any occasion.",
       highlight: "Curated spaces"
     },
     {
       icon: <Globe className="w-12 h-12" />,
       title: "Nationwide Access",
-      description: "Seamlessly work across multiple cities. One platform, unlimited possibilities throughout Pakistan.",
+      description: "Seamlessly book across multiple cities. One platform, unlimited possibilities throughout Pakistan.",
       highlight: "Multi-city access"
     },
     {
       icon: <Sparkles className="w-12 h-12" />,
       title: "Innovation First",
-      description: "Cutting-edge technology meets traditional hospitality. Experience the future of workspace booking.",
+      description: "Cutting-edge technology meets traditional hospitality. Experience the future of space booking.",
       highlight: "Tech-powered"
     }
   ];
@@ -48,8 +48,8 @@ const WhyChooseUs = () => {
             Why Choose <span className="text-gradient">RentMySpace</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We're not just another booking platform. We're your workspace partner, 
-            committed to transforming how Pakistan works.
+            We're not just another booking platform. We're your space partner, 
+            committed to transforming how Pakistan celebrates and works.
           </p>
         </div>
 

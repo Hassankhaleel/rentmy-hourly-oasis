@@ -4,8 +4,8 @@ const WhatWeDo = () => {
   const services = [
     {
       icon: <Building2 className="w-8 h-8" />,
-      title: "Premium Workspaces",
-      description: "Access to high-quality coworking spaces, private offices, and meeting rooms equipped with modern amenities."
+      title: "Premium Venues",
+      description: "Access to high-quality event spaces, party halls, meeting rooms, and workspaces equipped with modern amenities."
     },
     {
       icon: <Clock className="w-8 h-8" />,
@@ -42,8 +42,8 @@ const WhatWeDo = () => {
             What <span className="text-gradient">We Do</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            RentMySpace revolutionizes workspace access in Pakistan by providing flexible, 
-            hourly-based booking solutions for modern professionals and businesses.
+            RentMySpace revolutionizes space access in Pakistan by providing flexible, 
+            hourly-based booking solutions for events, parties, meetings, and work.
           </p>
         </div>
 
@@ -70,12 +70,12 @@ const WhatWeDo = () => {
         <div className="mt-16 text-center animate-fade-in-up">
           <div className="bg-gradient-card rounded-3xl p-8 lg:p-12 shadow-soft">
             <h3 className="text-2xl lg:text-3xl font-bold mb-6 text-foreground">
-              Transforming How Pakistan Works
+              Transforming How Pakistan Celebrates & Works
             </h3>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              From freelancers needing a quiet space for client calls to enterprises requiring 
-              temporary offices for project teams, RentMySpace connects you to the perfect 
-              workspace solution across major Pakistani cities including Karachi, Lahore, 
+              From birthday parties needing a perfect venue to businesses requiring 
+              temporary meeting spaces, RentMySpace connects you to the perfect 
+              space solution across major Pakistani cities including Karachi, Lahore, 
               Islamabad, Peshawar, and Faisalabad.
             </p>
           </div>

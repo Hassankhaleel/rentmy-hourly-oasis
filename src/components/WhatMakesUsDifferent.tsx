@@ -5,7 +5,7 @@ const WhatMakesUsDifferent = () => {
     {
       icon: <Rocket className="w-8 h-8" />,
       title: "First in Pakistan",
-      description: "We pioneered hourly workspace booking in Pakistan, creating an entirely new way to work.",
+      description: "We pioneered hourly space booking in Pakistan, creating an entirely new way to celebrate and work.",
       stats: "First to Market"
     },
     {
@@ -17,7 +17,7 @@ const WhatMakesUsDifferent = () => {
     {
       icon: <Heart className="w-8 h-8" />,
       title: "Local Understanding",
-      description: "Built by Pakistanis for Pakistanis. We understand prayer times, local holidays, and business culture.",
+      description: "Built by Pakistanis for Pakistanis. We understand local celebrations, business culture, and space needs.",
       stats: "100% Local"
     },
     {
@@ -29,7 +29,7 @@ const WhatMakesUsDifferent = () => {
     {
       icon: <Users className="w-8 h-8" />,
       title: "Community Focus",
-      description: "More than spaces - we're building Pakistan's largest professional community and networking hub.",
+      description: "More than spaces - we're building Pakistan's largest event and professional community hub.",
       stats: "10K+ Members"
     },
     {
@@ -49,7 +49,7 @@ const WhatMakesUsDifferent = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             We're not just following trends - we're setting them. Here's what sets RentMySpace apart 
-            from traditional office rentals and international competitors.
+            from traditional venue rentals and international competitors.
           </p>
         </div>
 
@@ -90,14 +90,14 @@ const WhatMakesUsDifferent = () => {
         {/* Comparison Section */}
         <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-soft animate-fade-in-up">
           <h3 className="text-2xl lg:text-3xl font-bold text-center mb-8 text-foreground">
-            RentMySpace vs Traditional Office Rentals
+            RentMySpace vs Traditional Venue Rentals
           </h3>
           
           <div className="grid md:grid-cols-2 gap-8">
             {/* Traditional */}
             <div className="space-y-4">
               <h4 className="text-xl font-semibold text-muted-foreground mb-4">
-                Traditional Office Rentals
+                Traditional Venue Rentals
               </h4>
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-muted-foreground">
@@ -152,8 +152,8 @@ const WhatMakesUsDifferent = () => {
             Experience the Difference Today
           </h3>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join the workspace revolution and see why thousands of professionals choose RentMySpace 
-            for their daily work needs.
+            Join the space revolution and see why thousands of people choose RentMySpace 
+            for their events, meetings, and celebrations.
           </p>
           <button className="btn-hero">
             Start Your Free Trial

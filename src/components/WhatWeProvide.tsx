@@ -10,7 +10,7 @@ const WhatWeProvide = () => {
     {
       icon: <Coffee className="w-6 h-6" />,
       title: "Complimentary Refreshments",
-      description: "Tea, coffee, and light snacks included"
+      description: "Tea, coffee, snacks, and catering options"
     },
     {
       icon: <Car className="w-6 h-6" />,
@@ -19,8 +19,8 @@ const WhatWeProvide = () => {
     },
     {
       icon: <Printer className="w-6 h-6" />,
-      title: "Business Services",
-      description: "Printing, scanning, and copying facilities"
+      title: "Event Services",
+      description: "Sound system, lighting, and technical support"
     },
     {
       icon: <Shield className="w-6 h-6" />,
@@ -34,8 +34,8 @@ const WhatWeProvide = () => {
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Meeting Rooms",
-      description: "Fully equipped conference facilities"
+      title: "Flexible Spaces",
+      description: "Adaptable layouts for any event or gathering"
     },
     {
       icon: <Monitor className="w-6 h-6" />,
@@ -46,22 +46,22 @@ const WhatWeProvide = () => {
 
   const spaceTypes = [
     {
-      title: "Hot Desks",
-      description: "Flexible shared workspace perfect for freelancers and remote workers",
-      price: "From PKR 200/hour",
-      features: ["Open seating", "Shared amenities", "Community access", "Basic setup"]
-    },
-    {
-      title: "Private Offices",
-      description: "Dedicated spaces for teams and businesses requiring privacy",
-      price: "From PKR 800/hour", 
-      features: ["Lockable office", "Personal storage", "Team collaboration", "Professional setup"]
+      title: "Party Venues",
+      description: "Beautiful spaces perfect for birthdays, celebrations, and social gatherings",
+      price: "From PKR 500/hour",
+      features: ["Event lighting", "Sound system", "Decorative setup", "Catering space"]
     },
     {
       title: "Meeting Rooms",
-      description: "Professional conference rooms for presentations and client meetings",
-      price: "From PKR 1,500/hour",
-      features: ["AV equipment", "Whiteboard", "Video conferencing", "Catering options"]
+      description: "Professional conference rooms for presentations and business meetings",
+      price: "From PKR 800/hour", 
+      features: ["AV equipment", "Whiteboard", "Video conferencing", "Business amenities"]
+    },
+    {
+      title: "Event Halls",
+      description: "Large venues for weddings, corporate events, and major celebrations",
+      price: "From PKR 2,000/hour",
+      features: ["Grand space", "Stage area", "Full catering", "Event management"]
     }
   ];
 
@@ -73,8 +73,8 @@ const WhatWeProvide = () => {
             What <span className="text-gradient">We Provide</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Premium workspaces equipped with everything you need to be productive, 
-            professional, and comfortable.
+            Premium spaces equipped with everything you need for any occasion, 
+            celebration, or business requirement.
           </p>
         </div>
 
@@ -135,10 +135,10 @@ const WhatWeProvide = () => {
         <div className="mt-20 text-center animate-fade-in-up">
           <div className="bg-gradient-hero rounded-3xl p-8 lg:p-12 text-white">
             <h3 className="text-3xl lg:text-4xl font-bold mb-6">
-              Ready to Transform Your Work Experience?
+              Ready to Transform Your Event Experience?
             </h3>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Join thousands of professionals who have discovered the flexibility and freedom of hourly workspace booking.
+              Join thousands of people who have discovered the flexibility and freedom of hourly space booking.
             </p>
             <button className="btn-hero-outline !border-white !text-white hover:!bg-white hover:!text-primary">
               Get Started Today
