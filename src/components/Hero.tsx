@@ -57,14 +57,27 @@ const Hero = () => {
             </div>
           </div>
           
+          {/* Waiting List */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-white/20 max-w-2xl mx-auto">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <input
+                type="email"
+                placeholder="Enter your email to join the waiting list"
+                className="flex-1 px-4 py-3 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+              />
+              <button className="btn-hero whitespace-nowrap">
+                Join Waiting List
+              </button>
+            </div>
+            <p className="text-sm text-white/70 mt-3 text-center">
+              Be the first to know when we launch in your city!
+            </p>
+          </div>
+          
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-hero group">
-              Start Booking Now
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </button>
             <button className="btn-hero-outline">
-              Explore Locations
+              Learn More
             </button>
           </div>
         </div>
