@@ -35,14 +35,14 @@ const Hero = () => {
           
           <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6 drop-shadow-lg">
             Book Your Perfect 
-            <span className="text-gradient block">Workspace</span>
+            <span className="text-gradient block">Space</span>
             <span className="text-accent">By The Hour</span>
           </h1>
           
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed drop-shadow-md max-w-3xl mx-auto">
-            Revolutionary hourly space booking platform connecting you to premium workspaces, 
-            meeting rooms, and collaborative spaces across Pakistan. 
-            <strong className="text-accent"> Work anywhere, anytime.</strong>
+            Revolutionary hourly space booking platform connecting you to premium venues, 
+            event spaces, meeting rooms, and party halls across Pakistan. 
+            <strong className="text-accent"> Any space, any occasion, anytime.</strong>
           </p>
           
           {/* Stats */}
