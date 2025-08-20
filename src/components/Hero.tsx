@@ -1,12 +1,75 @@
 import { ArrowRight, MapPin, Clock, Users } from "lucide-react";
-import heroImage from "@/assets/hero-image-new.jpg";
+import { useState, useEffect } from "react";
+import heroMultipurpose from "@/assets/hero-image-new.jpg";
+import heroParty from "@/assets/hero-party.jpg";
+import heroMeeting from "@/assets/hero-meeting.jpg";
+import heroWedding from "@/assets/hero-wedding.jpg";
+import heroCorporate from "@/assets/hero-corporate.jpg";
+import heroSocial from "@/assets/hero-social.jpg";
 
 const Hero = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const heroSlides = [
+    {
+      image: heroMultipurpose,
+      title: "Book Your Perfect Space",
+      subtitle: "By The Hour",
+      description: "Revolutionary hourly space booking platform connecting you to premium venues, event spaces, meeting rooms, and party halls across Pakistan.",
+      highlight: "Any space, any occasion, anytime."
+    },
+    {
+      image: heroParty,
+      title: "Perfect Party Venues",
+      subtitle: "For Every Celebration",
+      description: "Transform your birthday parties, anniversaries, and special celebrations with our premium party venues equipped with everything you need.",
+      highlight: "Make every moment memorable."
+    },
+    {
+      image: heroMeeting,
+      title: "Professional Meeting Rooms",
+      subtitle: "For Business Success",
+      description: "Elevate your business meetings, presentations, and corporate discussions in our modern, fully-equipped conference spaces.",
+      highlight: "Where business gets done."
+    },
+    {
+      image: heroWedding,
+      title: "Elegant Wedding Venues",
+      subtitle: "For Your Special Day",
+      description: "Create unforgettable wedding receptions and ceremonies in our beautifully designed event halls with premium amenities.",
+      highlight: "Your dream day awaits."
+    },
+    {
+      image: heroCorporate,
+      title: "Corporate Event Spaces",
+      subtitle: "For Professional Networking",
+      description: "Host impressive corporate events, product launches, and networking sessions in our sophisticated business venues.",
+      highlight: "Connect, collaborate, succeed."
+    },
+    {
+      image: heroSocial,
+      title: "Social Gathering Spaces",
+      subtitle: "For Friends & Family",
+      description: "Bring people together in our comfortable, modern spaces perfect for casual meetups, reunions, and social events.",
+      highlight: "Where connections happen."
+    }
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(timer);
+  }, [heroSlides.length]);
+
+  const currentHero = heroSlides[currentSlide];
+
   return (
     <section 
-      className="min-h-screen relative overflow-hidden flex items-center"
+      className="min-h-screen relative overflow-hidden flex items-center transition-all duration-1000 ease-in-out"
       style={{
-        backgroundImage: `url(${heroImage})`,
+        backgroundImage: `url(${currentHero.image})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
@@ -34,15 +97,14 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6 drop-shadow-lg">
-            Book Your Perfect 
-            <span className="text-gradient block">Space</span>
-            <span className="text-accent">By The Hour</span>
+            {currentHero.title}
+            <span className="text-gradient block">{currentHero.subtitle.split(' ')[0]}</span>
+            <span className="text-accent">{currentHero.subtitle.split(' ').slice(1).join(' ')}</span>
           </h1>
           
           <p className="text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed drop-shadow-md max-w-3xl mx-auto">
-            Revolutionary hourly space booking platform connecting you to premium venues, 
-            event spaces, meeting rooms, and party halls across Pakistan. 
-            <strong className="text-accent"> Any space, any occasion, anytime.</strong>
+            {currentHero.description}
+            <strong className="text-accent"> {currentHero.highlight}</strong>
           </p>
           
           {/* Stats */}
@@ -55,6 +117,21 @@ const Hero = () => {
               <Users className="w-5 h-5 text-accent" />
               <span className="font-semibold">500+ Spaces</span>
             </div>
+          </div>
+          
+          {/* Slide Indicators */}
+          <div className="flex justify-center gap-2 mb-8">
+            {heroSlides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentSlide 
+                    ? 'bg-accent shadow-lg' 
+                    : 'bg-white/30 hover:bg-white/50'
+                }`}
+              />
+            ))}
           </div>
           
           {/* Waiting List */}
