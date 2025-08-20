@@ -9,47 +9,47 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 220 15% 15%;
+    --foreground: 0 0% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 15% 15%;
+    --card-foreground: 0 0% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 15%;
+    --popover-foreground: 0 0% 15%;
 
-    /* Professional Blue Brand Colors */
-    --primary: 217 91% 60%;
+    /* Orange Brand Colors - #F3741F */
+    --primary: 18 93% 53%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 217 91% 70%;
-    --primary-dark: 217 91% 45%;
+    --primary-light: 18 93% 63%;
+    --primary-dark: 18 93% 43%;
 
-    /* Warm Accent for CTAs */
-    --accent: 14 100% 63%;
+    /* Complementary Orange Tones */
+    --accent: 18 100% 60%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 14 100% 73%;
+    --accent-light: 18 100% 70%;
 
-    --secondary: 217 32% 96%;
-    --secondary-foreground: 217 20% 25%;
+    --secondary: 0 0% 97%;
+    --secondary-foreground: 0 0% 25%;
 
-    --muted: 217 32% 96%;
-    --muted-foreground: 217 15% 55%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 217 20% 90%;
-    --input: 217 20% 90%;
-    --ring: 217 91% 60%;
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
+    --ring: 18 93% 53%;
 
-    /* Brand Gradients */
+    /* Modern Orange Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(217 32% 98%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
 
-    /* Elegant Shadows */
-    --shadow-soft: 0 4px 20px -2px hsl(var(--primary) / 0.1);
-    --shadow-medium: 0 8px 30px -4px hsl(var(--primary) / 0.15);
-    --shadow-strong: 0 20px 50px -10px hsl(var(--primary) / 0.2);
+    /* Modern Shadows with Orange Tint */
+    --shadow-soft: 0 4px 20px -2px hsl(var(--primary) / 0.08);
+    --shadow-medium: 0 8px 30px -4px hsl(var(--primary) / 0.12);
+    --shadow-strong: 0 20px 50px -10px hsl(var(--primary) / 0.15);
 
     /* Animation Variables */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -59,40 +59,40 @@
   }
 
   .dark {
-    --background: 220 15% 8%;
+    --background: 0 0% 8%;
     --foreground: 0 0% 95%;
 
-    --card: 220 15% 10%;
+    --card: 0 0% 10%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 220 15% 10%;
+    --popover: 0 0% 10%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 217 91% 65%;
-    --primary-foreground: 220 15% 8%;
-    --primary-light: 217 91% 75%;
-    --primary-dark: 217 91% 50%;
+    --primary: 18 93% 60%;
+    --primary-foreground: 0 0% 8%;
+    --primary-light: 18 93% 70%;
+    --primary-dark: 18 93% 45%;
 
-    --accent: 14 100% 68%;
-    --accent-foreground: 220 15% 8%;
-    --accent-light: 14 100% 78%;
+    --accent: 18 100% 65%;
+    --accent-foreground: 0 0% 8%;
+    --accent-light: 18 100% 75%;
 
-    --secondary: 220 15% 15%;
+    --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 85%;
 
-    --muted: 220 15% 15%;
-    --muted-foreground: 217 15% 65%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
     --destructive: 0 84% 65%;
     --destructive-foreground: 0 0% 95%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 217 91% 65%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 18 93% 60%;
 
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(220 15% 12%) 0%, hsl(220 15% 10%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 12%) 0%, hsl(0 0% 10%) 100%);
 
     --shadow-soft: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
     --shadow-medium: 0 8px 30px -4px hsl(0 0% 0% / 0.4);
@@ -128,9 +128,9 @@
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
   }
 
-  /* Card Styles */
+  /* Modern Card Styles */
   .card-hover {
-    @apply bg-gradient-to-br from-white to-secondary/30 rounded-2xl shadow-soft hover:shadow-medium transform hover:-translate-y-2 transition-all duration-300 border border-border/50;
+    @apply bg-white/80 backdrop-blur-sm rounded-2xl shadow-soft hover:shadow-medium transform hover:-translate-y-2 transition-all duration-300 border border-border/30 hover:border-primary/20;
   }
 
   /* Section Spacing */
