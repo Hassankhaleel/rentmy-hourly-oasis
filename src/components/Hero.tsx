@@ -1,5 +1,5 @@
 import { ArrowRight, MapPin, Clock, Users } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/hero-image-new.jpg";
 
 const Hero = () => {
   return (
