@@ -1,4 +1,4 @@
-import { ArrowRight, MapPin, Clock, Users } from "lucide-react";
+import { ArrowRight, MapPin, Clock, Users, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import heroMultipurpose from "@/assets/hero-image-new.jpg";
 import heroParty from "@/assets/hero-party.jpg";
@@ -55,6 +55,14 @@ const Hero = () => {
     }
   ];
 
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
+  };
+
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
@@ -75,6 +83,23 @@ const Hero = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
+      {/* Navigation Buttons */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 hover:scale-110"
+        aria-label="Previous image"
+      >
+        <ChevronLeft className="w-6 h-6" />
+      </button>
+      
+      <button
+        onClick={nextSlide}
+        className="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 hover:scale-110"
+        aria-label="Next image"
+      >
+        <ChevronRight className="w-6 h-6" />
+      </button>
+      
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
       
