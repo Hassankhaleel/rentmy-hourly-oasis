@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: mode === 'production' ? '/repository-name/' : '/',
+  base: mode === 'production' ? '/rentmy-hourly-oasis/' : '/',
 }));
